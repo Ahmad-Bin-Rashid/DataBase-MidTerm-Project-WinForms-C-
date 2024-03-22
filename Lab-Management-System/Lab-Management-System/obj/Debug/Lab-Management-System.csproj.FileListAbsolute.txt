@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\bin\Debug\Lab-Management-System.exe.config
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\bin\Debug\Lab-Management-System.exe
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\bin\Debug\Lab-Management-System.pdb
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab-Management-System.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.Properties.Resources.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab-Management-System.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab-Management-System.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab-Management-System.exe
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab-Management-System.pdb
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.HomePage.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.Assessment.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.AssessmentComponent.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.Clo.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.Rubric.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.RubricLevel.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.Student.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.StudentAttendance.resources
