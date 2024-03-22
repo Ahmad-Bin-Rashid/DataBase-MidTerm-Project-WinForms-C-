@@ -38,15 +38,15 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.firstNameTb = new System.Windows.Forms.TextBox();
+            this.lastNameTb = new System.Windows.Forms.TextBox();
+            this.regNoTb = new System.Windows.Forms.TextBox();
+            this.contactTb = new System.Windows.Forms.TextBox();
+            this.emailTb = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -71,11 +71,11 @@
             this.tableLayoutPanel1.Controls.Add(this.linkLabel2, 3, 6);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.button4, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.firstNameTb, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lastNameTb, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.regNoTb, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.contactTb, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.emailTb, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.button3, 3, 3);
@@ -205,6 +205,84 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Add Student";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button4.BackColor = System.Drawing.SystemColors.Control;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(490, 200);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Delete";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // firstNameTb
+            // 
+            this.firstNameTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.firstNameTb.BackColor = System.Drawing.SystemColors.Control;
+            this.firstNameTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameTb.Location = new System.Drawing.Point(142, 10);
+            this.firstNameTb.Name = "firstNameTb";
+            this.firstNameTb.Size = new System.Drawing.Size(100, 26);
+            this.firstNameTb.TabIndex = 0;
+            // 
+            // lastNameTb
+            // 
+            this.lastNameTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lastNameTb.BackColor = System.Drawing.SystemColors.Control;
+            this.lastNameTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameTb.Location = new System.Drawing.Point(142, 57);
+            this.lastNameTb.Name = "lastNameTb";
+            this.lastNameTb.Size = new System.Drawing.Size(100, 26);
+            this.lastNameTb.TabIndex = 1;
+            // 
+            // regNoTb
+            // 
+            this.regNoTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.regNoTb.BackColor = System.Drawing.SystemColors.Control;
+            this.regNoTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regNoTb.Location = new System.Drawing.Point(142, 104);
+            this.regNoTb.Name = "regNoTb";
+            this.regNoTb.Size = new System.Drawing.Size(100, 26);
+            this.regNoTb.TabIndex = 2;
+            // 
+            // contactTb
+            // 
+            this.contactTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.contactTb.BackColor = System.Drawing.SystemColors.Control;
+            this.contactTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactTb.Location = new System.Drawing.Point(490, 10);
+            this.contactTb.Name = "contactTb";
+            this.contactTb.Size = new System.Drawing.Size(100, 26);
+            this.contactTb.TabIndex = 3;
+            // 
+            // emailTb
+            // 
+            this.emailTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.emailTb.BackColor = System.Drawing.SystemColors.Control;
+            this.emailTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTb.Location = new System.Drawing.Point(490, 57);
+            this.emailTb.Name = "emailTb";
+            this.emailTb.Size = new System.Drawing.Size(100, 26);
+            this.emailTb.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Active",
+            "Inactive"});
+            this.comboBox1.Location = new System.Drawing.Point(490, 104);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 27);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.Text = "Active";
             // 
             // button2
             // 
@@ -230,79 +308,6 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Mark Attendance";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(490, 200);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(142, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(142, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(142, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(490, 10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(490, 57);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 4;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(490, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 27);
-            this.comboBox1.TabIndex = 5;
             // 
             // dataGridView1
             // 
@@ -348,11 +353,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox firstNameTb;
+        private System.Windows.Forms.TextBox lastNameTb;
+        private System.Windows.Forms.TextBox regNoTb;
+        private System.Windows.Forms.TextBox contactTb;
+        private System.Windows.Forms.TextBox emailTb;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
