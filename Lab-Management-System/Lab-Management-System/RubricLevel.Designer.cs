@@ -87,7 +87,7 @@
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel1.SetColumnSpan(this.comboBox1, 2);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(243, 6);
+            this.comboBox1.Location = new System.Drawing.Point(243, 9);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(422, 27);
             this.comboBox1.TabIndex = 0;
@@ -97,7 +97,7 @@
             // 
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(243, 86);
+            this.comboBox2.Location = new System.Drawing.Point(243, 89);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(234, 27);
             this.comboBox2.TabIndex = 2;
@@ -227,6 +227,7 @@
             this.Name = "RubricLevel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RubricLevel";
+            this.Load += new System.EventHandler(this.RubricLevel_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

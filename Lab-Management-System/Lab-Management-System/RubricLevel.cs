@@ -17,9 +17,7 @@ namespace Lab_Management_System
         public RubricLevel()
         {
             InitializeComponent();
-            BindGridView();
-            BindComboBox();
-            BindComboBox2();
+            
         }
 
         string constr = "Data Source = AHMAD-HP; Initial Catalog = ProjectB; Integrated Security = True;";
@@ -325,6 +323,13 @@ namespace Lab_Management_System
                     BindGridView();
                 }
             }
+        }
+
+        private void RubricLevel_Load(object sender, EventArgs e)
+        {
+            BindGridView();
+            BindComboBox();
+            BindComboBox2();
         }
     }
 }

@@ -23,6 +23,7 @@ namespace Lab_Management_System
         string constr = "Data Source = AHMAD-HP; Initial Catalog = ProjectB; Integrated Security = True;";
         string emailPattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
         string regNoPattern = "^[\\d]{4}[\\-]{1}[A-Z]{2,4}[\\-]{1}[\\d]{1,3}$";
+        string studentId = null;
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -98,24 +99,10 @@ namespace Lab_Management_System
             return name;
         }
 
-        private string GetStudentId(string regNo)
-        {
-            string id = null;
-            SqlConnection conn = new SqlConnection(constr);
-            string query = $"select * from Student where RegistrationNumber = '{regNo}';";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            conn.Open();
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                id = reader.GetInt32(0).ToString();
-            }
-            conn.Close();
-            return id;
-        }
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            studentId = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             firstNameTb.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             lastNameTb.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             contactTb.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
@@ -176,6 +163,7 @@ namespace Lab_Management_System
                     MessageBox.Show("Not Inserted Successfully !!", "Failure");
 
                 }
+                ClearField();
                 conn.Close();
                 BindGridView();
             }
@@ -184,50 +172,126 @@ namespace Lab_Management_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(constr);
-            conn.Open();
-            string query = "update Student set FirstName = @firstName, LastName = @lastName, Contact = @contact, Email = @email, RegistrationNumber = @regNo, Status = @status where Id = @id";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@id", GetStudentId(regNoTb.Text));
-            cmd.Parameters.AddWithValue("@firstName", firstNameTb.Text);
-            cmd.Parameters.AddWithValue("@lastName", lastNameTb.Text);
-            cmd.Parameters.AddWithValue("@contact", contactTb.Text);
-            cmd.Parameters.AddWithValue("@email", emailTb.Text);
-            cmd.Parameters.AddWithValue("@regNo", regNoTb.Text);
-            cmd.Parameters.AddWithValue("@status", GetComboBoxValue());
-            int rows = cmd.ExecuteNonQuery();
-            if (rows > 0)
+            if (studentId == null)
             {
-                MessageBox.Show("Updated Successfully !!", "Success");
+                MessageBox.Show("Please Double click the row from the table You want to Update !!", "Failure");
             }
             else
             {
-                MessageBox.Show("Not Updated Successfully !!", "Failure");
+                if (string.IsNullOrEmpty(firstNameTb.Text) || (!Regex.IsMatch(firstNameTb.Text[0].ToString(), "[A-Z]")))
+                {
+                    firstNameTb.Focus();
+                    firstNameErrorProvider.SetError(firstNameTb, "First Letter of Name should be Capital.");
+                }
+                else if (string.IsNullOrEmpty(lastNameTb.Text) || (!Regex.IsMatch(lastNameTb.Text[0].ToString(), "[A-Z]")))
+                {
+                    lastNameTb.Focus();
+                    lastNameErrorProvider.SetError(lastNameTb, "First Letter of Name should be Capital.");
+                }
+                else if (string.IsNullOrEmpty(regNoTb.Text) || !Regex.IsMatch(regNoTb.Text, regNoPattern))
+                {
+                    regNoTb.Focus();
+                    regNoErrorProvider.SetError(regNoTb, "Follow the Format like: 2023-CS-10");
+                }
+                else if (string.IsNullOrEmpty(contactTb.Text) || !Regex.IsMatch(contactTb.Text, "[0-9]"))
+                {
+                    contactTb.Focus();
+                    contactErrorProvider.SetError(contactTb, "Only Numbers allowed.");
 
+                }
+                else if (string.IsNullOrEmpty(emailTb.Text) || !Regex.IsMatch(emailTb.Text, emailPattern))
+                {
+                    emailTb.Focus();
+                    emailErrorProvider.SetError(emailTb, "Invalid Email Format");
+                }
+                else
+                {
+                    SqlConnection conn = new SqlConnection(constr);
+                    conn.Open();
+                    string query = "update Student set FirstName = @firstName, LastName = @lastName, Contact = @contact, Email = @email, RegistrationNumber = @regNo, Status = @status where Id = @id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", studentId);
+                    cmd.Parameters.AddWithValue("@firstName", firstNameTb.Text);
+                    cmd.Parameters.AddWithValue("@lastName", lastNameTb.Text);
+                    cmd.Parameters.AddWithValue("@contact", contactTb.Text);
+                    cmd.Parameters.AddWithValue("@email", emailTb.Text);
+                    cmd.Parameters.AddWithValue("@regNo", regNoTb.Text);
+                    cmd.Parameters.AddWithValue("@status", GetComboBoxValue());
+                    int rows = cmd.ExecuteNonQuery();
+                    if (rows > 0)
+                    {
+                        MessageBox.Show("Updated Successfully !!", "Success");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Not Updated Successfully !!", "Failure");
+
+                    }
+                    ClearField();
+                    conn.Close();
+                    BindGridView();
+
+                }
             }
-            conn.Close();
-            BindGridView();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(constr);
-            conn.Open();
-            string query = "delete from Student where Id = @id";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@id", GetStudentId(regNoTb.Text));
-            int rows = cmd.ExecuteNonQuery();
-            if (rows > 0)
+            if (studentId == null)
             {
-                MessageBox.Show("Deleted Successfully !!", "Success");
+                MessageBox.Show("Please Double click the row from the table You want to Delete !!", "Failure");
             }
             else
             {
-                MessageBox.Show("Not Deleted Successfully !!", "Failure");
+                if (string.IsNullOrEmpty(firstNameTb.Text) || (!Regex.IsMatch(firstNameTb.Text[0].ToString(), "[A-Z]")))
+                {
+                    firstNameTb.Focus();
+                    firstNameErrorProvider.SetError(firstNameTb, "First Letter of Name should be Capital.");
+                }
+                else if (string.IsNullOrEmpty(lastNameTb.Text) || (!Regex.IsMatch(lastNameTb.Text[0].ToString(), "[A-Z]")))
+                {
+                    lastNameTb.Focus();
+                    lastNameErrorProvider.SetError(lastNameTb, "First Letter of Name should be Capital.");
+                }
+                else if (string.IsNullOrEmpty(regNoTb.Text) || !Regex.IsMatch(regNoTb.Text, regNoPattern))
+                {
+                    regNoTb.Focus();
+                    regNoErrorProvider.SetError(regNoTb, "Follow the Format like: 2023-CS-10");
+                }
+                else if (string.IsNullOrEmpty(contactTb.Text) || !Regex.IsMatch(contactTb.Text, "[0-9]"))
+                {
+                    contactTb.Focus();
+                    contactErrorProvider.SetError(contactTb, "Only Numbers allowed.");
 
+                }
+                else if (string.IsNullOrEmpty(emailTb.Text) || !Regex.IsMatch(emailTb.Text, emailPattern))
+                {
+                    emailTb.Focus();
+                    emailErrorProvider.SetError(emailTb, "Invalid Email Format");
+                }
+                else
+                {
+                    SqlConnection conn = new SqlConnection(constr);
+                    conn.Open();
+                    string query = "delete from Student where Id = @id";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", studentId);
+                    int rows = cmd.ExecuteNonQuery();
+                    if (rows > 0)
+                    {
+                        MessageBox.Show("Deleted Successfully !!", "Success");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Not Deleted Successfully !!", "Failure");
+
+                    }
+                    ClearField();
+                    conn.Close();
+                    BindGridView();
+
+                }
             }
-            conn.Close();
-            BindGridView();
         }
 
 
@@ -296,5 +360,15 @@ namespace Lab_Management_System
                 emailErrorProvider.Clear();
             }
         }
+    
+        private void ClearField()
+        {
+            firstNameTb.Clear();
+            lastNameTb.Clear();
+            regNoTb.Clear();
+            contactTb.Clear();
+            emailTb.Clear();
+        }
+    
     }
 }

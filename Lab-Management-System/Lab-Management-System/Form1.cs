@@ -17,52 +17,51 @@ namespace Lab_Management_System
             InitializeComponent();
         }
 
-        public static Student studentPage = new Student();
-        public static StudentAttendance studentAttendancePage = new StudentAttendance();
-        public static StudentResult studentResultPage = new StudentResult();
-        public static Clo cloPage = new Clo();
-        public static Rubric rubricPage = new Rubric();
-        public static RubricLevel rubricLevelPage = new RubricLevel();
-        public static Assessment assessmentPage = new Assessment();
-        public static AssessmentComponent assessmentComponentPage = new AssessmentComponent();
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Student studentPage = new Student();
             studentPage.Show();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            StudentAttendance studentAttendancePage = new StudentAttendance();
             studentAttendancePage.Show();
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Clo cloPage = new Clo();
             cloPage.Show();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Rubric rubricPage = new Rubric();
             rubricPage.Show();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            RubricLevel rubricLevelPage = new RubricLevel();
             rubricLevelPage.Show();
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Assessment assessmentPage = new Assessment();
             assessmentPage.Show();
         }
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            AssessmentComponent assessmentComponentPage = new AssessmentComponent();
             assessmentComponentPage.Show();
         }
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            StudentResult studentResultPage = new StudentResult();
             studentResultPage.Show();
         }
     }
