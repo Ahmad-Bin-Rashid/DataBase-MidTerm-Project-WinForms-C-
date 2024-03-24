@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,8 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.firstNameTb = new System.Windows.Forms.TextBox();
@@ -46,10 +45,20 @@
             this.emailTb = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.firstNameErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lastNameErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.regNoErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.contactErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.emailErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.firstNameErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lastNameErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regNoErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -58,17 +67,15 @@
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label6, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel2, 3, 6);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.button4, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.firstNameTb, 1, 0);
@@ -78,8 +85,8 @@
             this.tableLayoutPanel1.Controls.Add(this.emailTb, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 2, 6);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(39, 58);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -91,7 +98,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(697, 475);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -136,7 +142,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(351, 14);
+            this.label4.Location = new System.Drawing.Point(330, 14);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 0;
@@ -148,7 +154,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(351, 61);
+            this.label5.Location = new System.Drawing.Point(330, 61);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 19);
             this.label5.TabIndex = 0;
@@ -160,38 +166,12 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(351, 108);
+            this.label6.Location = new System.Drawing.Point(330, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 19);
             this.label6.TabIndex = 0;
             this.label6.Text = "Status :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(142, 440);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(46, 19);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Home";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(490, 440);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(100, 19);
-            this.linkLabel2.TabIndex = 11;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Manage CLOs";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // button1
             // 
@@ -210,14 +190,16 @@
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button4.AutoSize = true;
             this.button4.BackColor = System.Drawing.SystemColors.Control;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(490, 200);
+            this.button4.Location = new System.Drawing.Point(469, 197);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(75, 29);
             this.button4.TabIndex = 9;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // firstNameTb
             // 
@@ -228,6 +210,7 @@
             this.firstNameTb.Name = "firstNameTb";
             this.firstNameTb.Size = new System.Drawing.Size(100, 26);
             this.firstNameTb.TabIndex = 0;
+            this.firstNameTb.Leave += new System.EventHandler(this.firstNameTb_Leave);
             // 
             // lastNameTb
             // 
@@ -238,6 +221,7 @@
             this.lastNameTb.Name = "lastNameTb";
             this.lastNameTb.Size = new System.Drawing.Size(100, 26);
             this.lastNameTb.TabIndex = 1;
+            this.lastNameTb.Leave += new System.EventHandler(this.lastNameTb_Leave);
             // 
             // regNoTb
             // 
@@ -248,26 +232,29 @@
             this.regNoTb.Name = "regNoTb";
             this.regNoTb.Size = new System.Drawing.Size(100, 26);
             this.regNoTb.TabIndex = 2;
+            this.regNoTb.Leave += new System.EventHandler(this.regNoTb_Leave);
             // 
             // contactTb
             // 
             this.contactTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.contactTb.BackColor = System.Drawing.SystemColors.Control;
             this.contactTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactTb.Location = new System.Drawing.Point(490, 10);
+            this.contactTb.Location = new System.Drawing.Point(469, 10);
             this.contactTb.Name = "contactTb";
             this.contactTb.Size = new System.Drawing.Size(100, 26);
             this.contactTb.TabIndex = 3;
+            this.contactTb.Leave += new System.EventHandler(this.contactTb_Leave);
             // 
             // emailTb
             // 
             this.emailTb.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.emailTb.BackColor = System.Drawing.SystemColors.Control;
             this.emailTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTb.Location = new System.Drawing.Point(490, 57);
+            this.emailTb.Location = new System.Drawing.Point(469, 57);
             this.emailTb.Name = "emailTb";
             this.emailTb.Size = new System.Drawing.Size(100, 26);
             this.emailTb.TabIndex = 4;
+            this.emailTb.Leave += new System.EventHandler(this.emailTb_Leave);
             // 
             // comboBox1
             // 
@@ -275,39 +262,24 @@
             this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Active",
-            "Inactive"});
-            this.comboBox1.Location = new System.Drawing.Point(490, 104);
+            this.comboBox1.Location = new System.Drawing.Point(469, 104);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 27);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Active";
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(142, 200);
+            this.button2.Location = new System.Drawing.Point(142, 197);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 29);
             this.button2.TabIndex = 8;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button3.AutoSize = true;
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(490, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 29);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Mark Attendance";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -318,6 +290,40 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(691, 182);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(330, 440);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(46, 19);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Home";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // firstNameErrorProvider
+            // 
+            this.firstNameErrorProvider.ContainerControl = this;
+            // 
+            // lastNameErrorProvider
+            // 
+            this.lastNameErrorProvider.ContainerControl = this;
+            // 
+            // regNoErrorProvider
+            // 
+            this.regNoErrorProvider.ContainerControl = this;
+            // 
+            // contactErrorProvider
+            // 
+            this.contactErrorProvider.ContainerControl = this;
+            // 
+            // emailErrorProvider
+            // 
+            this.emailErrorProvider.ContainerControl = this;
             // 
             // Student
             // 
@@ -334,6 +340,11 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.firstNameErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lastNameErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regNoErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailErrorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,10 +359,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox firstNameTb;
         private System.Windows.Forms.TextBox lastNameTb;
@@ -360,5 +369,10 @@
         private System.Windows.Forms.TextBox emailTb;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider firstNameErrorProvider;
+        private System.Windows.Forms.ErrorProvider lastNameErrorProvider;
+        private System.Windows.Forms.ErrorProvider regNoErrorProvider;
+        private System.Windows.Forms.ErrorProvider contactErrorProvider;
+        private System.Windows.Forms.ErrorProvider emailErrorProvider;
     }
 }

@@ -15,3 +15,4 @@ C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management
 C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.RubricLevel.resources
 C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.Student.resources
 C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.StudentAttendance.resources
+C:\Users\HP\Desktop\mine\DB Lab\Mid-Project\Lab-Management-System\Lab-Management-System\obj\Debug\Lab_Management_System.StudentResult.resources
