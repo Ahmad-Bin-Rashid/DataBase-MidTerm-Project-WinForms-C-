@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +46,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.EvaluateBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -60,19 +61,20 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.EvaluateBtn, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.AddBtn, 2, 3);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(28, 29);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -87,16 +89,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(731, 396);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(84, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Evaluate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddBtn.AutoSize = true;
+            this.AddBtn.Location = new System.Drawing.Point(571, 122);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(75, 29);
+            this.AddBtn.TabIndex = 0;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // label1
             // 
@@ -142,7 +145,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(306, 166);
+            this.label5.Location = new System.Drawing.Point(63, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 19);
             this.label5.TabIndex = 1;
@@ -173,13 +176,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(725, 152);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(489, 162);
+            this.textBox1.Location = new System.Drawing.Point(246, 162);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 26);
+            this.textBox1.Size = new System.Drawing.Size(237, 26);
             this.textBox1.TabIndex = 4;
             // 
             // dateTimePicker1
@@ -198,6 +202,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(237, 27);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.Leave += new System.EventHandler(this.comboBox1_Leave);
             // 
             // comboBox2
             // 
@@ -207,6 +212,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(237, 27);
             this.comboBox2.TabIndex = 6;
+            this.comboBox2.Leave += new System.EventHandler(this.comboBox2_Leave);
             // 
             // comboBox3
             // 
@@ -216,6 +222,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(237, 27);
             this.comboBox3.TabIndex = 6;
+            this.comboBox3.Leave += new System.EventHandler(this.comboBox3_Leave);
             // 
             // errorProvider1
             // 
@@ -228,6 +235,18 @@
             // errorProvider3
             // 
             this.errorProvider3.ContainerControl = this;
+            // 
+            // EvaluateBtn
+            // 
+            this.EvaluateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EvaluateBtn.AutoSize = true;
+            this.EvaluateBtn.Location = new System.Drawing.Point(571, 161);
+            this.EvaluateBtn.Name = "EvaluateBtn";
+            this.EvaluateBtn.Size = new System.Drawing.Size(75, 29);
+            this.EvaluateBtn.TabIndex = 0;
+            this.EvaluateBtn.Text = "Evaluate";
+            this.EvaluateBtn.UseVisualStyleBackColor = true;
+            this.EvaluateBtn.Click += new System.EventHandler(this.EvaluateBtn_Click);
             // 
             // StudentResult
             // 
@@ -252,7 +271,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -268,5 +287,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.Button EvaluateBtn;
     }
 }
