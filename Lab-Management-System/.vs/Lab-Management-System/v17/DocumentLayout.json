@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|c:\\users\\hp\\desktop\\mine\\db lab\\mid-project\\lab-management-system\\lab-management-system\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\rubric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\rubric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\assessmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\assessmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\rubric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\rubric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\lab-management-system\\assessmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{554F21C7-DD97-49CD-9A4C-D9F673306BFC}|Lab-Management-System\\Lab-Management-System.csproj|solutionrelative:lab-management-system\\assessmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentResult.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\StudentResult.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\StudentResult.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\StudentResult.cs",
+              "RelativeToolTip": "Lab-Management-System\\StudentResult.cs",
+              "ViewState": "AQIAANsAAAAAAAAAAAAqwO8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-24T18:26:47.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentResult.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\StudentResult.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\StudentResult.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\StudentResult.cs [Design]",
+              "RelativeToolTip": "Lab-Management-System\\StudentResult.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-24T18:15:46.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rubric.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Rubric.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\Rubric.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Rubric.cs",
+              "RelativeToolTip": "Lab-Management-System\\Rubric.cs",
+              "ViewState": "AQIAAEwAAACAAAAAAAAjwF0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-24T17:59:02.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rubric.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Rubric.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\Rubric.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Rubric.cs [Design]",
+              "RelativeToolTip": "Lab-Management-System\\Rubric.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-24T17:59:01.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Student.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\Student.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Student.cs",
+              "RelativeToolTip": "Lab-Management-System\\Student.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA8wDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T16:06:34.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Student.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\Student.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Student.cs [Design]",
+              "RelativeToolTip": "Lab-Management-System\\Student.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-24T16:06:30.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssessmentComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\AssessmentComponent.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\AssessmentComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\AssessmentComponent.cs",
+              "RelativeToolTip": "Lab-Management-System\\AssessmentComponent.cs",
+              "ViewState": "AQIAAAcAAAAAODMzMzMLwBcAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-24T10:35:48.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\Form1.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\Form1.cs",
+              "RelativeToolTip": "Lab-Management-System\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-22T12:57:02.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AssessmentComponent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\AssessmentComponent.cs",
+              "RelativeDocumentMoniker": "Lab-Management-System\\AssessmentComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\mine\\DB Lab\\Mid-Project\\Lab-Management-System\\Lab-Management-System\\AssessmentComponent.cs [Design]",
+              "RelativeToolTip": "Lab-Management-System\\AssessmentComponent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-22T10:52:10.801Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
